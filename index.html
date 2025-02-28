@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page 4 Section</title>
+    <title>Landing Page Sederhana</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         * {
@@ -91,7 +91,7 @@
             <a href="#about" class="btn btn-orange mt-3">Find More</a>
         </div>
         <div class="grid-container; class="col-md-6 text-end">
-            <img src="Assets/UPS.png" alt="Tech Image" width="250px">
+            <img src="UPS.png" alt="Tech Image" width="250px">
         </div>
     </section>
 
@@ -108,7 +108,7 @@
         <div class="row mt-4">
             <div class="col-md-4">
                 <div class="card" onclick="alert('Anda memilih Pelatihan Graphic Design!')">
-                    <img src="Assets/DSG.png" class="card-img-top" alt="Layanan 1">
+                    <img src="DSG.png" class="card-img-top" alt="Layanan 1">
                     <div class="card-body">
                         <p class="card-text" style="font-weight: bold;">Pelatihan Graphic Design</p>
                         <p class="text-secondary" style="color: grey;">Kuasa desain visual dengan alat-alat dan teknik desain modern.</p>
@@ -117,7 +117,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card" onclick="alert('Anda memilih Web Developmen!')">
-                    <img src="Assets/WD.png" class="card-img-top" alt="Layanan 2">
+                    <img src="WD.png" class="card-img-top" alt="Layanan 2">
                     <div class="card-body">
                         <p class="card-text" style="font-weight: bold;">Web Developmen</p>
                         <p class="text-secondary" style="color: grey;">Pelajari cara membangun website profesional dari nol dengan teknologi terkini.</p>
@@ -126,7 +126,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card" onclick="alert('Anda memilih public speaking!')">
-                    <img src="Assets/PB.png" class="card-img-top" alt="Layanan 3">
+                    <img src="PB.png" class="card-img-top" alt="Layanan 3">
                     <div class="card-body">
                         <p class="card-text" style="font-weight: bold;">Public Speaking</p>
                         <p class="text-secondary" style="color: grey;">Bangun kepercayaan diri Anda dalam berbicara di depan umum dengan teknik terbaik.</p>
@@ -139,17 +139,17 @@
     <section class="container mt-5" id="contact">
         <h2 class="text-center" style="font-weight: bold;">Hubungi Kami</h2>
         <div class="mt-4 p-4 bg-light rounded">
-            <form id="contactForm">
+            <form action="process_form.php" method="POST">
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="name" placeholder="Nama" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" id="message" placeholder="Pesan" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark w-100">Kirim</button>
+                    <input type="text" class="form-control" name="name" placeholder="Nama" required>
+                 </div>
+                 <div class="mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                 </div>
+                 <div class="mb-3">
+                    <textarea class="form-control" name="message" placeholder="Pesan" required></textarea>
+                 </div>
+                    <button type="submit" class="btn btn-dark w-100">Kirim</button>
             </form>
         </div>
     </section>
